@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+</head>
+
+<body>
+    <div id="page1" class="page1">
+        <div class="page-header text-center header">
+            <h2 class="heading">Stock Market Simulator</h2>
+        </div>
+        <div class="custom-sidebar">
+            <div class="sidebar-button1">
+                <a href="signup.html">SIGNUP</a>
+            </div>
+        </div>
+        <div class="login-form">
+            <h3>Login:</h3>
+            <input type="text" id="loginUsername" placeholder="Username" class="login-boxes" style="width: 100%">
+            <br>
+            <br>
+            <input type="password" id="loginPassword" placeholder="Password" class="login-boxes" style="width: 100%">
+            <br>
+            <br>
+            <button type="button" id="loginButton" class="btn btn-success" onclick="loginSubmission()"
+                style="width:100%">Login</button>
+        </div>
+        <div class="unsuccessfulLoginAlert">Please check your password.</div>  
+        <div class="emptyLoginAlert">Sorry, that user doesn't exist.</div>        
+    </div>
+    <div id="page2" class="page2">
+        <div class="page-header text-center header">
+            <h2 class="heading">Stock Market Simulator</h1>
+                <h5 class="subheading">HOME</h5>
+        </div>
+        <div class="custom-sidebar">
+            <div class="sidebar-username">
+                <p id="sidebar-user"></p>
+            </div>
+            <div class="sidebar-button">
+                <button type="button" onclick="homeButton()" class="btn btn-outline-light sideButtons">HOME</button>
+            </div>
+            <div class="sidebar-button">
+                <button type="button" onclick="searchButton()" class="btn btn-outline-light sideButtons">SEARCH</button>
+            </div>
+            <div class="sidebar-button">
+                <button onclick="portfolioButton()" class="btn btn-outline-light sideButtons">PORTFOLIO</button>
+            </div>
+            <div class="sidebar-button">
+                <button type="button" onclick="stocklistButton()" class="btn btn-outline-light sideButtons">STOCKLIST</button>
+            </div>
+            <div class="sidebar-button">
+                <a href="login.html">LOGOUT</a>
+            </div>
+
+        </div>
+        <table class="top-stocks">
+            <tr>
+                <th style="text-align: center">Top 5 Daily Stocks:</th>
+            </tr>
+            <tr>
+                <td id="topstock1" style="text-align: center" onclick="topstock1()">
+            </tr>
+            <tr>
+                <td id="topstock2" style="text-align: center" onclick="topstock2()">
+            </tr>
+            <tr>
+                <td id="topstock3" style="text-align: center" onclick="topstock3()">
+            </tr>
+            <tr>
+                <td id="topstock4" style="text-align: center" onclick="topstock4()">
+            </tr>
+            <tr>
+                <td id="topstock5" style="text-align: center" onclick="topstock5()">
+            </tr>
+        </table>
+        <button type="button" id="refreshButton" class="btn btn-success refreshButton" onclick="refreshHome()">Refresh</button>
+    </div>
+    <div id="page3" class="page3">
+        <div class="page-header text-center header">
+            <h2 class="heading">Stock Market Simulator</h1>
+                <h5 class="subheading">SEARCH</h5>
+        </div>
+        <div class="custom-sidebar">
+            <div class="sidebar-username">
+                <p id="sidebar-user2"></p>
+            </div>
+            <div class="sidebar-button">
+                <button onclick="homeButton()" class="btn btn-outline-light sideButtons">HOME</button>
+            </div>
+            <div class="sidebar-button">
+                <button onclick="searchButton()" class="btn btn-outline-light sideButtons">SEARCH</button>
+            </div>
+            <div class="sidebar-button">
+                <button onclick="portfolioButton()" class="btn btn-outline-light sideButtons">PORTFOLIO</button>
+            </div>
+            <div class="sidebar-button">
+                <button onclick="stocklistButton()" class="btn btn-outline-light sideButtons">STOCKLIST</button>
+            </div>
+            <div class="sidebar-button">
+                <a href="login.html">LOGOUT</a>
+            </div>
+        </div>
+        <div class="active-cyan-3 active-cyan-4 mb-4 searchbar">
+            <input class="form-control" id="searchbarInput" type="text" style="text-align: center" placeholder="Stock Symbol" aria-label="Search">
+            <button type="button" class="btn btn-success searchbarButton" onclick="searchbarButton()">Search</button>
+        </div>
+        <div class="stockPageButtonDiv">
+            <button type="button" class="btn btn-dark stockPageButton" onclick="stockPageButton()" id="toStockPage"></button>
+        </div>
+    </div>
+    <div id="page4" class="page4">
+        <div class="page-header text-center header">
+            <h2 class="heading">Stock Market Simulator</h1>
+                <h5 class="subheading">PORTFOLIO</h5>
+        </div>
+        <div class="custom-sidebar">
+            <div class="sidebar-username">
+                <p id="sidebar-user3"></p>
+            </div>
+            <div class="sidebar-button">
+                <button onclick="homeButton()" class="btn btn-outline-light sideButtons">HOME</button>
+            </div>
+            <div class="sidebar-button">
+                <button onclick="searchButton()" class="btn btn-outline-light sideButtons">SEARCH</button>
+            </div>
+            <div class="sidebar-button">
+                <button onclick="portfolioButton()" class="btn btn-outline-light sideButtons">PORTFOLIO</button>
+            </div>
+            <div class="sidebar-button">
+                <button onclick="stocklistButton()" class="btn btn-outline-light sideButtons">STOCKLIST</button>
+            </div>
+            <div class="sidebar-button">
+                <a href="login.html">LOGOUT</a>
+            </div>
+        </div>
+        <div class="emptyHeader">
+            <h3>Under construction...</h3>
+        </div>
+    </div>
+    <div id="page5" class="page5">
+            <div class="page-header text-center header">
+                <h2 class="heading">Stock Market Simulator</h1>
+                    <h5 class="subheading">STOCKLIST</h5>
+            </div>
+            <div class="custom-sidebar">
+                <div class="sidebar-username">
+                    <p id="sidebar-user4"></p>
+                </div>
+                <div class="sidebar-button">
+                    <button onclick="homeButton()" class="btn btn-outline-light sideButtons">HOME</button>
+                </div>
+                <div class="sidebar-button">
+                    <button onclick="searchButton()" class="btn btn-outline-light sideButtons">SEARCH</button>
+                </div>
+                <div class="sidebar-button">
+                    <button onclick="portfolioButton()" class="btn btn-outline-light sideButtons">PORTFOLIO</button>
+                </div>
+                <div class="sidebar-button">
+                    <button onclick="stocklistButton()" class="btn btn-outline-light sideButtons">STOCKLIST</button>
+                </div>
+                <div class="sidebar-button">
+                    <a href="login.html">LOGOUT</a>
+                </div>
+            </div>
+            <div class="emptyHeader">
+                <h3>Under construction...</h3>
+            </div>
+        </div>
+        <div id="stockPage" class="stockPage">
+            <div class="page-header text-center header">
+                <h2 class="heading">Stock Market Simulator</h1>
+                <h5 class="subheading" id="stockpageName"></h5>
+            </div>
+            <div class="custom-sidebar">
+                <div class="sidebar-username">
+                    <p id="sidebar-user5"></p>
+                </div>
+                <div class="sidebar-button">
+                    <button onclick="homeButton()" class="btn btn-outline-light sideButtons">HOME</button>
+                </div>
+                <div class="sidebar-button">
+                    <button onclick="searchButton()" class="btn btn-outline-light sideButtons">SEARCH</button>
+                </div>
+                <div class="sidebar-button">
+                    <button onclick="portfolioButton()" class="btn btn-outline-light sideButtons">PORTFOLIO</button>
+                </div>
+                <div class="sidebar-button">
+                    <button onclick="stocklistButton()" class="btn btn-outline-light sideButtons">STOCKLIST</button>
+                </div>
+                <div class="sidebar-button">
+                    <a href="login.html">LOGOUT</a>
+                </div>
+            </div>
+            <table class="stockInfo">
+                <tr>
+                    <th style="text-align: center" colspan="2" id="stockPageInfoTitle">Daily Performance (Loading):</th>
+                </tr>
+                <tr>
+                    <td class="stockInfoLeft">Stock High:</td>
+                    <td id="stockPageHigh" class="stockInfoRight">0.00</td>
+                </tr>
+                <tr>
+                    <td class="stockInfoLeft">Stock Low:</td>
+                    <td id="stockPageLow" class="stockInfoRight">0.00</td>
+                </tr>
+                <tr>
+                    <td class="stockInfoLeft">Opening Value:</td>
+                    <td id="stockPageOpen" class="stockInfoRight">0.00</td>
+                </tr>
+                <tr>
+                    <td class="stockInfoLeft">Closing Value:</td>
+                    <td id="stockPageClose" class="stockInfoRight">0.00</td>
+                </tr>
+                <tr>
+                    <td class="stockInfoLeft">Change:</td>
+                    <td id="stockPageChange" class="stockInfoRight">0%</td>
+                </tr>
+            </table>
+            <div class="chartHolder">
+                <canvas class="stockPageChart" id="stockChart"></canvas>
+            </div>
+        </div>
+    <div class="unsuccessfulSignupAlert">Passwords don't match.</div>
+    <div class="emptySignupAlert">Ensure all boxes are filled out.</div>
+    <div class="successfulSignupAlert">You have successfully signed up!</div>
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="code.js"></script>
+</body>
+
+</html>

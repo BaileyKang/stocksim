@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="page-header text-center header">
+        <h2 class="heading">Stock Market Simulator</h2>
+    </div>
+    <div class="custom-sidebar">
+        <div class="sidebar-button1">
+            <a href="login.html">LOGIN</a>
+        </div>
+    </div> 
+    <div class="signup-form">
+        <h3>Signup:</h3>   
+        <input type="text" id="username" placeholder="Username" class="login-boxes" style="width: 100%">
+        <br>
+        <br>
+        <input type="password" id="password" placeholder="Password" class="login-boxes" style="width: 100%">
+        <br>
+        <br>
+        <input type="password" id="passwordRepeat" placeholder="Repeat password" class="login-boxes" style="width: 100%">
+        <br>
+        <br>
+        <button type="button" id="signupButton" class="btn btn-success" onclick="signupSubmission()" style="width:100%">Signup</button>
+    </div> 
+    <div class="unsuccessfulSignupAlert">Passwords don't match.</div>  
+    <div class="emptySignupAlert">Ensure all boxes are filled out.</div>        
+    <div class="successfulSignupAlert">You have successfully signed up!</div>     
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="code.js"></script>    
+</body>
+
+</html>

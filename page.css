@@ -1,0 +1,294 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  background-color: #FF7F50;
+  height: 12%;
+  padding-top: 5px;
+
+}
+
+.heading {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.top-stocks {
+  border-radius: 25px;
+  border: 2px solid black;
+  width: 300px;
+  height: 225px;
+  margin-left: 40%;
+  margin-top: 10%;
+  position: relative;
+  border-collapse: collapse;
+}
+
+.searchbar {
+  margin-left: 27%;
+  margin-top: 2%;
+  position: relative;
+  width: 600px;
+  height: 50px;
+}
+
+.stockPageButtonDiv {
+  display: none;
+  margin-left: 48%;
+  margin-top: 5%;
+  position: relative;
+}
+
+.stockInfo {
+  border-radius: 25px;
+  border: 2px solid black;
+  width: 350px;
+  height: 225px;
+  margin-left: 20%;
+  margin-top: 8%;
+  position: relative;
+  border-collapse: collapse;
+}
+
+.searchbarButton {
+  width: 100%;
+}
+
+.stockInfoRight {
+  width:63%;
+  text-align: center;
+}
+
+.stockInfoLeft {
+  width: 37%;
+  font-weight: bold;
+  padding-left: 6px;
+}
+
+.chartHolder {
+  width:600px;
+  height: 500px;
+  margin-left: 50%;
+  margin-top: -22%;
+  position: relative;
+}
+
+.stockPageChart {
+  width: 100%;
+  height:100%;
+}
+
+td, th {
+  border: 2px solid black;
+}
+
+.subheading {
+  font-weight: bold;
+}
+
+.custom-sidebar {
+  height: 88%;
+  background-color: lightblue;
+  width: 15%;
+  float: left;
+  text-align: center;
+}
+
+.signup-form {
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid black;
+  width: 300px;
+  height: 280px;
+  margin-left: 40%;
+  margin-top: 10%;
+  position: relative;
+}
+
+.login-form {
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid black;
+  width: 300px;
+  height: 225px;
+  margin-left: 40%;
+  margin-top: 10%;
+  position: relative;
+}
+
+.unsuccessfulSignupAlert {
+  width: 300px;
+  height: 40px;
+  margin-left: 40%;
+  margin-top: 20px;
+  position: relative;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border: 1px red;
+  border-radius: 5px;
+  display: none;
+}
+
+.emptyHeader {
+  width: 500px;
+  height: 60px;
+  margin-left: 31%;
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.unsuccessfulLoginAlert {
+  width: 300px;
+  height: 40px;
+  margin-left: 40%;
+  margin-top: 20px;
+  position: relative;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border: 1px red;
+  border-radius: 5px;
+  display: none;
+}
+
+.refreshButton {
+  margin-left: 55%;
+  margin-top: -22%;
+  position: relative;
+  width: 100px;
+  height: 60px;
+}
+
+.emptyLoginAlert {
+  width: 300px;
+  height: 40px;
+  margin-left: 40%;
+  margin-top: 20px;
+  position: relative;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border: 1px red;
+  border-radius: 5px;
+  display: none;
+}
+
+.emptySignupAlert {
+  width: 300px;
+  height: 40px;
+  margin-left: 40%;
+  margin-top: 20px;
+  position: relative;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  border: 1px red;
+  border-radius: 5px;
+  display: none;
+}
+
+.successfulSignupAlert {
+  width: 300px;
+  height: 40px;
+  margin-left: 40%;
+  margin-top: 20px;
+  position: relative;
+  background-color: #79c879;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  display: none;
+  border: 1px #79c879;
+  border-radius: 5px;
+}
+
+.page1 {
+  width: 100%;
+  height: 100%;
+}
+
+.page2 {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.page3 {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.page4 {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.page5 {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.stockPage {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.sideButtons {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.sidebar-button {
+  text-align: center;
+  width: 60%;
+  height: 40px;
+  display: inline-block;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: 1px orange;
+}
+
+.sidebar-button1 {
+  text-align: center;
+  width: 60%;
+  padding: 2px;
+  height: 30px;
+  background-color: white;
+  display: inline-block;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: 1px orange;
+}
+
+.sidebar-username {
+  text-align: center;
+  width: 60%;
+  padding: 2px;
+  height: 30px;
+  background-color: white;
+  display: inline-block;
+  margin-top: 15px;
+  border-radius: 4px;
+  border: 1px orange;
+}
